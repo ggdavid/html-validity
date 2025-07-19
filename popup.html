@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body 	{ font-family: "Lato", Arial, sans-serif; font-size: 15px; font-style: normal; margin: 0; width: 12em; padding: 1em; background-color: #F9F9F9 }
+header	{ margin: 0 0 .4em }
+button 	{ flex: 1; padding: .4em; font-size: 86.666667%; cursor: pointer }
+.flex	{ display: flex; column-gap: 1em }
+.mb1	{ margin-bottom: 1em }
+.warn	{ width: auto; color: #700; background-color: #FDD; white-space: nowrap }
+</style>
+</head>
+<body>
+	<header>Validate:</header>
+	<div class="flex mb1">
+		<button id="btn-validate-html" title="Validate HTML Source Code">HTML</button>
+		<button id="btn-validate-dom" title="Validate Generated DOM Content">DOM</button>
+	</div>
+	<div><label><input type="checkbox" id="w3c" value="w3c"> Use W3C Website</label></div>
+	<script src="popup.js"></script>
+</body>
+</html>

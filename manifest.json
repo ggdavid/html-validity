@@ -1,0 +1,32 @@
+{
+	"manifest_version": 3,
+	"name": "HTML Validity",
+	"version": "1.0.0",
+	"description": "Validate any webpage's HTML source or DOM using W3C tools. View detailed results directly in your browser console.",
+	"author": "David A. Mchedlishvili",
+	"homepage_url": "https://github.com/ggdavid/html-validity",
+	"icons": {
+		"16": "icons/default.png",
+		"48": "icons/default.png",
+		"128": "icons/default.png"
+	},
+	"permissions": [
+		"activeTab",
+		"scripting"
+	],
+	"host_permissions": [
+		"https://validator.w3.org/nu/*"
+	],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"action": {
+		"default_title": "HTML Validity",
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "icons/default.png",
+			"48": "icons/default.png",
+			"128": "icons/default.png"
+		}
+	}
+}
